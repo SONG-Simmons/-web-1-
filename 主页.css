@@ -1,0 +1,149 @@
+@media (min-width: 350px) and (max-width: 500px){
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.1rem;
+}
+.top{
+	width: 100%;
+	height: 4vh;
+	background-color: #000;
+}
+.top_nav{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+}
+.lost{
+	width: 100%;
+	height: 6vh;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	font-size: 2rem;
+}
+.lost_th{
+	width: 8vw;
+	height: 4vh;
+	font-size: 14px;
+}
+.stick{
+	width: 3vw;
+	height: 0.3vh;
+	background-color: #0DD;
+	margin: 0 auto;
+}
+.found{
+	width: 8vw;
+	height: 3vh;
+	font-size: 13px;
+	color: #a9a9a9;
+	font-weight: normal;
+}
+.main_msg{
+	width: 100%;
+	height: 77vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	background-color: #f5f5f5;
+}
+.colume{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.items{
+	width: 45vw;
+	height: 36vh;
+	border-bottom-right-radius: 5%;
+	border-bottom-left-radius: 5%;
+	background-color: #fff;
+	overflow: hidden;
+}
+.pic img{
+	width: 45vw;
+	height: 20vh;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+.message{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1vh;
+	flex-wrap: nowrap;
+	width: 45vw;
+	height: 4vh;
+}
+.category{
+	width: 6vw;
+	height: 2vh;
+	border-radius: 25%;
+	background-color: #0DD;
+	margin-right: 0.5vw;
+	display: flex;
+	justify-content: center;
+}
+.money{
+	width: 3vw;
+	height: 2vh;
+	background-color: #0DD;
+	border-radius: 25%;
+	display: flex;
+	justify-content: center;
+}
+.title{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-grow: 1;
+	width: 45vw;
+	height: 4vh;
+	margin-left: 1VW;
+}
+.title p{
+	font-size: 12px;
+}
+.name{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 2vh;
+}
+.name img{
+	width: 5vw;
+	height: 3vh;
+	margin-right: 1vw;
+}
+.intervel{
+	width: 18vw;
+}
+.time{
+	font-weight: normal;
+	color: #d3d3d3;
+}
+.footer{
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	align-items: baseline; 
+	justify-content: space-around;
+	margin-top: 1vh;
+}
+.nav{
+	width: 7vw;
+	height: 7vh;
+}
+.nav img{
+	width: 6vw;
+	height: 4vh;
+}
+.nav_name{
+    width: 6vw;
+    height: 2vh;
+	margin: 0 auto;
+}
+}

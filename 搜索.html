@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜索</title>
+	<meta charset="utf-8"/>
+ 	<meta name="viewport" content="width=device-width,init-scale=1.0,maximum-scale=1.0,user-scale=no"/>
+ 	<link rel="stylesheet" type="text/css" href="搜索.css"/>
+</head>
+<body>
+	<header class="top"></header>
+	<div class="big_title">
+		<p>搜索</p>
+	</div>
+	<div class="search_box">
+		<input type="text" name="/" value="雨伞" class="input_box"/>
+        <button class="button">搜索</button>
+	</div>
+	<div class="kinds">
+		<div class="demo">
+			<p>启示类型</p>
+			<ul class="mark">
+				<li class="child trans" id="down">
+					<img src="./img/down.png"/>
+				</li>
+				<li class="child" id="up">
+					<img src="./img/up.png"/>
+				</li>
+			</ul>
+		</div>
+		<div class="demo">
+			<p>丢失地点</p>
+        <!--<ul class="mark">
+				<li class="child trans" id="down">
+					<img src="./img/down.png"/>
+				</li>
+				<li class="child" id="up">
+					<img src="./img/up.png"/>
+				</li>
+			</ul> -->
+		</div>
+		<div class="demo">
+			<p>物品类型</p>
+			<!-- <ul class="mark">
+				<li class="child trans" id="down">
+					<img src="./img/down.png"/>
+				</li>
+				<li class="child" id="up">
+					<img src="./img/up.png"/>
+				</li>
+			</ul> -->
+		</div>
+	</div>
+	<div class="change_li">
+		<ul class="choiceOne">
+			<li>不限</li>
+			<li>失物</li>
+			<li>招领</li>
+		</ul>
+		<ul class="choiceTwo">
+			<li>不限</li>
+			<li>一教</li>
+			<li>二教</li>
+			<li>三教</li>
+			<li>四教</li>
+			<li>五教</li>
+			<li>八教</li>
+			<li>逸夫楼</li>
+		</ul>
+		<ul class="choiceThree">
+			<li>不限</li>
+			<li>钥匙</li>
+			<li>钱包</li>
+			<li>证件</li>
+			<li>U盘</li>
+			<li>书籍</li>
+			<li>文具</li>
+			<li>雨具</li>
+			<li>书包</li>
+			<li>衣物</li>
+			<li>首饰</li>
+			<li>电脑</li>
+			<li>手机</li>
+			<li>充电宝</li>
+			<li>一卡通</li>
+			<li>充电器</li>
+			<li>其他</li>
+			<li id="confirm">确认</li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="items">
+			<div class="pic">
+				<img src="./img/one1.png"/>
+			</div>
+			<div class="right_part">
+				<div class="message">
+					<span class="category">首饰</span>
+ 				    <span class="money">酬</span>
+ 				    <span class="money">丢</span>
+ 				    <span>数字图书馆</span>
+ 				    <span>11月18日21:00</span>
+				</div>
+				<div class="title">
+					<p>我在三教丢了一个银镯子</p>
+				</div>
+				<div class="name">
+					<img src="./img/head1.png"/>
+ 					<p class="intervel">喊我金老板</p>
+ 					<p class="time">2018/11/18发布</p>
+				</div>
+			</div>
+		</div>
+		<div class="items">
+			<div class="pic">
+				<img src="./img/one2.png"/>
+			</div>
+			<div class="right_part">
+				<div class="message">
+					<span class="category">U盘</span>
+ 				    <span class="money">丢</span>
+ 				    <span>千喜鹤</span>
+ 				    <span>11月18日20：55</span>
+				</div>
+				<div class="title">
+					<p>本人丢失了一个U盘，上面掉着一个很可爱的熊本环</p>
+				</div>
+				<div class="name">
+					<img src="./img/head2.png"/>
+ 					<p class="intervel">Conquer</p>
+ 					<p class="time">2018/11/18发布</p>
+				</div>
+			</div>
+		</div>
+		<div class="items">
+			<div class="pic">
+				<img src="./img/two1.png"/>
+			</div>
+			<div class="right_part">
+				<div class="message">
+					<span class="category">证件</span>
+ 				    <span class="money">丢</span>
+ 				    <span>千喜鹤</span>
+ 				    <span>11月18日20：00</span>
+			    </div>
+			    <div class="title">
+					<p>学校发的银行卡丢了，没钱我怎么活啊嘤嘤嘤~</p>
+			    </div>
+				<div class="name">
+					<img src="./img/head3.png"/>
+ 					<p class="intervel">鲨鱼吃了素</p>
+ 					<p class="time">2018/11/18发布</p>
+				</div>
+			</div>
+		</div>
+		<div class="last_items">
+			<div class="last_pic">
+				<img src="./img/one3.png"/>
+			</div>
+			<div class="last_right_part">
+				<div class="message">
+					<span class="category">钱包</span>
+ 				    <span class="money">拾</span>
+ 				    <span>三教</span>
+ 				    <span>11月18日17：30</span>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+ 		<div class="nav" id="start2">
+ 			<ul><img src="./img/2footer1.png"></ul>
+ 			<ul class="nav_name">首页</ul>
+ 		</div>
+ 		<div class="nav">
+ 			<ul><img src="./img/2footer2.png"></ul>
+ 			<ul class="nav_name">搜索</ul>
+ 		</div>
+ 		<div class="nav">
+ 			<ul><img src="./img/footer5.png"></ul>
+ 			<ul class="nav_name">发布</ul>
+ 		</div>
+ 		<div class="nav">
+ 			<ul><img src="./img/footer3.png"></ul>
+ 			<ul class="nav_name">消息</ul>
+ 		</div>
+ 		<div class="nav">
+ 			<ul><img src="./img/footer4.png"></ul>
+ 			<ul class="nav_name">我的</ul>
+ 		</div>
+ 	</div>
+ 	<script type="text/javascript">
+ 		var jump = document.getElementById('start2');
+ 		jump.onclick = function(){
+ 			window.location.href = '主页.html';
+ 		}
+ 		var clickOpen = document.getElementById('down');
+ 		var clickShut = document.getElementById('up');
+ 		var list = document.getElementsByClassName('choiceOne')[0];
+ 		var list1 = document.getElementsByClassName('choiceTwo')[0];
+ 		var list2 = document.getElementsByClassName('choiceThree')[0];
+ 		clickOpen.addEventListener('click',function(){
+ 			list.style.display = 'inline-block';
+ 			list1.style.display = 'inline-block';
+ 			list2.style.display = 'flex';
+ 			clickShut.className = 'child trans';
+ 			clickOpen.className = 'child';
+ 		})
+ 		clickShut.addEventListener('click',function(){
+ 			list.style.display = 'none';
+ 			list1.style.display = 'none';
+ 			list2.style.display = 'none';
+ 			clickOpen.className = 'child trans';
+ 			clickShut.className = 'child';
+ 		})
+    </script>
+</body>
+</html>
