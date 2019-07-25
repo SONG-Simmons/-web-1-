@@ -52,3 +52,42 @@ for (let j = 0; j < face.length; j++) {
         faceCover[j].id = '';
     };
 }
+
+let scrollxs = document.getElementsByClassName('scrollx');
+let points = document.querySelectorAll('.trig span');
+let words = document.querySelectorAll('.roll-title a');
+let index = 0;
+let time = 0;
+let goIndex = function () {
+    for (let n = 0; n < scrollxs.length; n++){
+        scrollxs[n].className = 'scrollx';
+        points[n].className = '';
+        words[n].className = '';
+    }
+    scrollxs[index].className = 'scrollx on';
+    points[index].className = 'on';
+    words[index].className = 'on';
+};
+let goNext = function(){
+    if (index < 4){
+        index ++;
+    }else{
+        index = 0;
+    }
+    goIndex();
+    time = 0;
+};
+for (let m = 0; m<points.length; m++){
+    points[m].addEventListener('click',function () {
+        index = this.getAttribute('data-index');
+        goIndex();
+        time = 0;
+    })
+}
+setInterval(function(){
+    time++;
+    if(time === 50){
+        goNext();
+        time = 0;
+    }
+},100);

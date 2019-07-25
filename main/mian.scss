@@ -34,7 +34,7 @@
   .card-mask{
     position: absolute;
     left: 0;
-    top: 11vh;
+    top: 12vh;
     height: 5vh;
     width: 9.5vw;
     line-height: 1.5vw;
@@ -62,7 +62,6 @@
     top: 0;
     height: 100%;
     background: rgba(0, 0, 0, .7);
-
     .card-ap {
       opacity: 1;
     }
@@ -112,5 +111,126 @@
 .recommend-box{
   &:hover .rec-btn{
     opacity: 1;
+  }
+}
+.panel{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  .roll-pic{
+    z-index: 1;
+    position: relative;
+    li{
+      position: absolute;
+      a{
+        display: inline-block;
+        img{
+          width: 29vw;
+          height: 35vh;
+        }
+      }
+      .more-text{
+        position: absolute;
+        right: 1vw;
+        bottom: 5vh;
+        color: #fff;
+        background: rgba(0,0,0,.64);
+        width: 3.5vw;
+        height: 3.5vh;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 4px;
+        opacity: 0;
+        transition: all .2s linear;
+        &:after{
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 12px;
+          margin: -2px 0 0 5px;
+          vertical-align: middle;
+          background: url("https://static.hdslb.com/images/base/icons.png") -541px -218px;
+        }
+        &:hover{
+          text-shadow: 0 0 3px #fff;
+        }
+      }
+      &:hover .more-text{
+        opacity: 1;
+      }
+    }
+    .scrollx{
+      float: left;
+      transition: all .2s;
+    }
+    .on{
+      z-index: 200;
+      opacity: 1;
+    }
+    .off{
+      opacity: 0;
+      transform: translateX(-29vw);
+      transition: all .5s;
+    }
+  }
+  .roll-title{
+    z-index: 201;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: -webkit-linear-gradient(transparent,rgba(0,0,0,.5));
+    font-size: 14px;
+    li{
+      position: absolute;
+      width: 100%;
+      a{
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        padding-left: 10px;
+        opacity: 0;
+        z-index: -1;
+        transition: all .3s;
+      }
+      .on{
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+  .trig{
+    position: absolute;
+    z-index: 202;
+    bottom: 6px;
+    right: 20px;
+    span{
+      width: 18px;
+      height: 18px;
+      background-position: -855px -790px;
+      background-color: transparent;
+      background-image: url("https://static.hdslb.com/images/base/icons.png");
+      &:hover{
+        background-position: -919px -790px;
+      }
+      }
+    }
+}
+.trig span{
+  display: inline-block;
+  margin-left: 8px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+.carousel-module .panel .trig{
+  .on{
+    background-position: -855px -727px;
+    width: 18px;
+    height: 18px;
   }
 }
