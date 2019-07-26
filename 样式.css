@@ -1015,11 +1015,14 @@ input[type=text]:focus {
 .chief-module{
     padding-bottom: 5vh;
 }
-.chief-module:before{
+.clearFix{
+    zoom: 1;
+}
+.clearFix:before{
     content: "";
     display: table;
 }
-.chief-module:after{
+.clearFix:after{
     clear: both;
     overflow: hidden;
     content: "";

@@ -1,3 +1,4 @@
+$Bili-color: #00a1d6;
 .chief-module{
   .recommend-box{
     height: 35vh;
@@ -232,5 +233,204 @@
     background-position: -855px -727px;
     width: 18px;
     height: 18px;
+  }
+}
+.popularize-module{
+  margin-bottom: 1vh;
+  .headline{
+    padding: 0 0 1vh;
+    .icon-popular{
+      width: 3vw;
+      height: 7vh;
+      margin-right: .5vw;
+      vertical-align: middle;
+      float: left;
+      margin-top: -1.5vh;
+      background-image: url("https://static.hdslb.com/images/base/icons.png");
+      background-position: -141px -75px;
+    }
+    span{
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 400;
+      margin-right: 1.5vw;
+      float: left;
+    }
+    .fire{
+      margin-top: 1vh;
+      margin-left: 1vw;
+      padding-right: 1vw;
+      color: #6d757a;
+      float: left;
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        height: 15px;
+        right: 0;
+        top: 2px;
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+  .story-box{
+    height: 23vh;
+    overflow: hidden;
+    .spread-module{
+      position: relative;
+      width: 10.5vw;
+      height: 20vh;
+      float: left;
+      margin: 0 1.3vw 2.4vh 0;
+      a img{
+        vertical-align: middle;
+        width: 10.5vw;
+        height: 14vh;
+        border-radius: 4px;
+      }
+      .spread-mask{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10.5vw;
+        height: 14vh;
+        background: rgba(0,0,0,.2);
+        transition: opacity .3s;
+        .dis{
+          display: block;
+        }
+      }
+      .t{
+        padding-top: 1vh;
+        height: 5vh;
+        line-height: 20px;
+        transition: all .2s linear;
+        color: #222;
+        overflow: hidden;
+        text-align: left;
+      }
+      &:hover .spread-mask{
+        opacity: 1;
+      }
+      &:hover .t{
+        color: $Bili-color;
+      }
+    }
+  }
+  .online{
+    position: relative;
+    height: 5vh;
+    line-height: 34px;
+    padding: 0 1vw;
+    border-radius: 4px;
+    text-align: center;
+    background: #e5e9ef;
+    white-space: nowrap;
+    a{
+      color: #6d757a;
+    }
+    em{
+      display: inline-block;
+      border-left: 1px solid #b8c0cc;
+      height: 10px;
+      line-height: 10px;
+      margin: 12px 15px 0;
+      vertical-align: top;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+  .adpos{
+    margin-top: 1.5vh;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 17vw;
+    height: 20vh;
+    position: relative;
+    a img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.bili_mid{
+  .l-con{
+    float: left;
+    width: 59vw;
+  }
+  .r-con{
+    width: 17vw;
+    float: right;
+  }
+}
+.zone-wrap-module{
+  margin-bottom: 2vh;
+}
+.adv-module{
+  margin-bottom: 20px;
+  position: relative;
+  width: 76vw;
+  border-radius: 5px;
+  max-height: 20vh;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.live-module{
+  .zone-title{
+    padding-right: 3vw;
+    .headline{
+      padding: 0 0 1vw;
+      i{
+        width: 3vw;
+        height: 7vh;
+        margin-right: .6vw;
+        vertical-align: middle;
+        float: left;
+        margin-top: -1.5vh;
+        background-image: url("https://static.hdslb.com/images/base/icons.png");
+        background-position: -141px -652px;
+      }
+      .z-name{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-right: 1.3vw;
+        float: left;
+        color: #222;
+        &:hover{
+          color: $Bili-color;
+        }
+      }
+      .online{
+        float: left;
+        margin-top: 1vh;
+        color: #99a2aa;
+        span{
+          color: $Bili-color;
+        }
+      }
+      .z-fire{
+        margin-top: 1vh;
+        margin-left: 3vw;
+        padding-right: 1vw;
+        color: #6d757a;
+        float: left;
+        i{
+          display: inline-block;
+          vertical-align: top;
+          background-position: -665px -1113px;
+          width: 14px;
+          height: 14px;
+          margin-top: 1px;
+          background-image: url("https://static.hdslb.com/images/base/icons.png");
+        }
+        &:hover{
+          color: $Bili-color;
+        }
+      }
+    }
   }
 }
