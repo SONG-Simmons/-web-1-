@@ -53,41 +53,61 @@ for (let j = 0; j < face.length; j++) {
     };
 }
 
-let scrollxs = document.getElementsByClassName('scrollx');
-let points = document.querySelectorAll('.trig span');
-let words = document.querySelectorAll('.roll-title a');
 let index = 0;
 let time = 0;
-let goIndex = function () {
-    for (let n = 0; n < scrollxs.length; n++){
-        scrollxs[n].className = 'scrollx';
-        points[n].className = '';
-        words[n].className = '';
+let goIndex = function (pic,poi,sentence) {
+    for (let n = 0; n < pic.length; n++){
+        pic[n].className = 'scrollx';
+        poi[n].className = '';
+        sentence[n].className = '';
     }
-    scrollxs[index].className = 'scrollx on';
-    points[index].className = 'on';
-    words[index].className = 'on';
+    pic[index].className = 'scrollx on';
+    poi[index].className = 'on';
+    sentence[index].className = 'on';
 };
-let goNext = function(){
-    if (index < 4){
+let goNext = function(picNum){
+    if (index < picNum){
         index ++;
     }else{
         index = 0;
     }
-    goIndex();
     time = 0;
 };
-for (let m = 0; m<points.length; m++){
+
+let scrollxs = document.getElementsByClassName('scrollx');
+let points = document.querySelectorAll('.carousel-module .trig span');
+let words = document.querySelectorAll('.carousel-module .roll-title a');
+for (let m = 0; m < points.length; m++){
     points[m].addEventListener('click',function () {
         index = this.getAttribute('data-index');
-        goIndex();
+        goIndex(scrollxs, points, words);
         time = 0;
     })
 }
 setInterval(function(){
     time++;
     if(time === 50){
-        goNext();
+        goNext(4);
+        goIndex(scrollxs, points, words);
         time = 0;
     }
 },100);
+
+let imgs = document.querySelectorAll('.tab-box .roll-pic li');
+let lang = document.querySelectorAll('.tab-box .trig span');
+let pencil = document.querySelectorAll('.tab-box .roll-title a');
+// for (let x = 0; x< lang.length; x++) {
+//     lang[x].addEventListener('mouseenter',function () {
+//         index = this.getAttribute('data-s');
+//         goIndex(imgs, lang, pencil);
+//         time = 0;
+//     })
+// }
+// setInterval(function () {
+//     time++;
+//     if(time === 40){
+//         goNext(2);
+//         goIndex(imgs, lang, pencil);
+//         time = 0;
+//     }
+// },100);
